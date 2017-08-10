@@ -18,6 +18,8 @@ var Terminal = (function() {
         terminal.appendChild(newPrompt);
         newPrompt.querySelector(".input").innerHTML = " ";
         newPrompt.querySelector(".input").focus();
+
+        window.scrollTo(0, document.body.scrollHeight);
     };
 
     var runCommand = function(terminal, cmd, args) {
